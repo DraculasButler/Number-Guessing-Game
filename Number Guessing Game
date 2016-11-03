@@ -1,0 +1,30 @@
+import random
+
+number = random.randint(1,20) #Change this range to whatever you'd like.
+guess = 0
+
+
+print('I am thinking of a number between 1 and 20.')
+print('Take a guess.')
+print('[Type any number followed by "Enter"].')
+
+while guess != number:
+    print('type your guess.')
+    
+    guess = input()
+    guess = int(guess)
+
+    if guess == number:
+        break
+    
+    if guess < number:
+        print('too low.')
+    else:
+        print('too high')
+            
+
+if guess == number:
+    print('Way to go!')
+    
+    
+    
